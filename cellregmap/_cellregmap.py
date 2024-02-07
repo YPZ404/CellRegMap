@@ -341,7 +341,6 @@ class CellRegMap:
 
         G = asarray(G, float)
         n_snps = G.shape[1]
-        n_samples = self._W.shape[0]  # Assuming self._W has shape (n_samples, n_features)
 
         E0 = self._E0 if idx_E is None else self._E0[idx_E, :]
         
